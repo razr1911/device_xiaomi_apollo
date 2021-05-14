@@ -42,7 +42,6 @@ vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
-vendor/lib/libfastcrc.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
@@ -377,8 +376,6 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/system_properties.xml
 vendor/lib64/libmmosal.so
@@ -938,7 +935,6 @@ vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libswregistrationalgo.so
-vendor/lib/libvideoutils.so
 vendor/lib64/camera/com.qti.actuator.apollo_dw9800.so
 vendor/lib64/camera/com.qti.eeprom.apollo_ofilm_s5k3t2_gt24p64.so
 vendor/lib64/camera/com.qti.eeprom.apollo_ofilm_s5k5e9yx04_gt24p64.so
