@@ -8,8 +8,6 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -153,26 +151,12 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-framework/tcmclient.jar
-system_ext/bin/dpmd
-system_ext/etc/dpm/dpm.conf
-system_ext/etc/init/dpmd.rc
-system_ext/etc/permissions/com.qti.dpmframework.xml
-system_ext/etc/permissions/dpmapi.xml
-system_ext/framework/com.qti.dpmframework.jar
-system_ext/framework/dpmapi.jar
 system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib/libdpmctmgr.so
 system_ext/lib/libdpmfdmgr.so
 system_ext/lib/libdpmframework.so
 system_ext/lib/libdpmtcm.so
 system_ext/lib/vendor.qti.diaghal@1.0.so
-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
-system_ext/lib64/libdpmctmgr.so
-system_ext/lib64/libdpmfdmgr.so
-system_ext/lib64/libdpmframework.so
-system_ext/lib64/libdpmtcm.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
@@ -282,7 +266,6 @@ vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
-vendor/lib64/libaoa.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libdataitems.so
@@ -333,15 +316,6 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
--system_ext/priv-app/ims/ims.apk
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -437,9 +411,6 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -554,14 +525,6 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
 # RIL
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/qti_libpermissions.xml
-system_ext/etc/permissions/qti_permissions.xml
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
-system_ext/framework/qcrilhook.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/adpl
@@ -874,89 +837,7 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 
 # WiFi
-vendor/bin/cnss-daemon
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display
--framework/WfdCommon.jar
-system_ext/bin/wfdservice
-system_ext/etc/init/wfdservice.rc
-system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
-system_ext/etc/seccomp_policy/wfdservice.policy
-system_ext/etc/wfdconfigsink.xml
-system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-system_ext/lib/libmmrtpdecoder.so
-system_ext/lib/libmmrtpencoder.so
-system_ext/lib/libwfdavenhancements.so
-system_ext/lib/libwfdclient.so
-system_ext/lib/libwfdcommonutils.so
-system_ext/lib/libwfdconfigutils.so
-system_ext/lib/libwfddisplayconfig.so
-system_ext/lib/libwfdmminterface.so
-system_ext/lib/libwfdmmsink.so
-system_ext/lib/libwfdmmsrc_system.so
-system_ext/lib/libwfdrtsp.so
-system_ext/lib/libwfdservice.so
-system_ext/lib/libwfdsinksm.so
-system_ext/lib/libwfduibcinterface.so
-system_ext/lib/libwfduibcsink.so
-system_ext/lib/libwfduibcsinkinterface.so
-system_ext/lib/libwfduibcsrc.so
-system_ext/lib/libwfduibcsrcinterface.so
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/lib64/libmmparser_lite.so
-system_ext/lib64/libmmrtpdecoder.so
-system_ext/lib64/libmmrtpencoder.so
-system_ext/lib64/libwfdclient.so
-system_ext/lib64/libwfdcommonutils.so
-system_ext/lib64/libwfdconfigutils.so
-system_ext/lib64/libwfddisplayconfig.so
-system_ext/lib64/libwfdmminterface.so
-system_ext/lib64/libwfdmmsink.so
-system_ext/lib64/libwfdnative.so
-system_ext/lib64/libwfdrtsp.so
-system_ext/lib64/libwfdsinksm.so
-system_ext/lib64/libwfduibcinterface.so
-system_ext/lib64/libwfduibcsink.so
-system_ext/lib64/libwfduibcsinkinterface.so
-system_ext/lib64/libwfduibcsrc.so
-system_ext/lib64/libwfduibcsrcinterface.so
--system_ext/priv-app/WfdService/WfdService.apk
-vendor/bin/wfdhdcphalservice
-vendor/bin/wfdvndservice
-vendor/bin/wifidisplayhalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/wfdvndservice.rc
-vendor/etc/seccomp_policy/wfdhdcphalservice.policy
-vendor/etc/seccomp_policy/wfdvndservice.policy
-vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/wfdconfig.xml
-vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmosal.so
-vendor/lib/libmmrtpdecoder_proprietary.so
-vendor/lib/libmmrtpencoder_proprietary.so
-vendor/lib/libwfdcodecv4l2_proprietary.so
-vendor/lib/libwfdcommonutils_proprietary.so
-vendor/lib/libwfdconfigutils_proprietary.so
-vendor/lib/libwfddisplayconfig_proprietary.so
-vendor/lib/libwfdhdcpcp.so
-vendor/lib/libwfdhdcpservice_proprietary.so
-vendor/lib/libwfdmminterface_proprietary.so
-vendor/lib/libwfdmmservice_proprietary.so
-vendor/lib/libwfdmmsrc_proprietary.so
-vendor/lib/libwfdmodulehdcpsession.so
-vendor/lib/libwfdrtsp_proprietary.so
-vendor/lib/libwfdsessionmodule.so
-vendor/lib/libwfdsourcesession_proprietary.so
-vendor/lib/libwfdsourcesm_proprietary.so
-vendor/lib/libwfduibcinterface_proprietary.so
-vendor/lib/libwfduibcsink_proprietary.so
-vendor/lib/libwfduibcsinkinterface_proprietary.so
-vendor/lib/libwfduibcsrc_proprietary.so
-vendor/lib/libwfduibcsrcinterface_proprietary.so
-vendor/lib/libwfdutils_proprietary.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
